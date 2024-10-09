@@ -11,6 +11,6 @@ namespace EShop.Domain.Domain
     {
         public string userId { get; set; }
         public EShopApplicationUser Owner { get; set; }
-        public IEnumerable<ProductInOrder> ProductsInOrder { get; set; }
+        public IEnumerable<BookInOrder> BooksInOrder { get; set; }
     }
 }

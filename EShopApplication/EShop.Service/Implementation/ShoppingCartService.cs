@@ -19,14 +19,14 @@ namespace EShop.Service.Implementation
     public class ShoppingCartService : IShoppingCartService
     {
         private readonly IRepository<ShoppingCart> _shoppingCartRepository;
-        private readonly IRepository<ProductInShoppingCart> _productInShoppingCartRepository;
+        private readonly IRepository<BookInShoppingCart> _productInShoppingCartRepository;
         private readonly IUserRepository _userRepository;
         private readonly IRepository<Order> _orderRepository;
-        private readonly IRepository<ProductInOrder> _productInOrderRepository;
+        private readonly IRepository<BookInOrder> _productInOrderRepository;
         private readonly IEmailService _emailService;
 
 
-        public ShoppingCartService (IRepository<ProductInOrder> _productInOrderRepository, IRepository<Order> _orderRepository, IUserRepository userRepository, IRepository<ShoppingCart> shoppingCartRepository, IRepository<ProductInShoppingCart> productInShoppingCartRepository, IEmailService emailService)
+        public ShoppingCartService (IRepository<BookInOrder> _productInOrderRepository, IRepository<Order> _orderRepository, IUserRepository userRepository, IRepository<ShoppingCart> shoppingCartRepository, IRepository<BookInShoppingCart> productInShoppingCartRepository, IEmailService emailService)
         {
             this._productInOrderRepository = _productInOrderRepository;
             this._orderRepository = _orderRepository;
@@ -35,17 +35,17 @@ namespace EShop.Service.Implementation
             _productInShoppingCartRepository = productInShoppingCartRepository;
             _emailService = emailService;
         }
-        public bool AddToShoppingConfirmed(ProductInShoppingCart model, string userId)
+        public bool AddToShoppingConfirmed(BookInShoppingCart model, string userId)
         {
 
             var loggedInUser = _userRepository.Get(userId);
 
             var userShoppingCart = loggedInUser.ShoppingCart;
 
-            if (userShoppingCart.ProductInShoppingCarts == null)
-                userShoppingCart.ProductInShoppingCarts = new List<ProductInShoppingCart>(); ;
+            if (userShoppingCart.BookInShoppingCarts == null)
+                userShoppingCart.BookInShoppingCarts = new List<BookInShoppingCart>(); ;
 
-            userShoppingCart.ProductInShoppingCarts.Add(model);
+            userShoppingCart.BookInShoppingCarts.Add(model);
             _shoppingCartRepository.Update(userShoppingCart);
             return true;
         }
@@ -57,9 +57,9 @@ namespace EShop.Service.Implementation
                 var loggedInUser = _userRepository.Get(userId);
 
                 var userShoppingCart = loggedInUser.ShoppingCart;
-                var product = userShoppingCart.ProductInShoppingCarts.Where(x => x.ProductId == productId).FirstOrDefault();
+                var product = userShoppingCart.BookInShoppingCarts.Where(x => x.ProductId == productId).FirstOrDefault();
 
-                userShoppingCart.ProductInShoppingCarts.Remove(product);
+                userShoppingCart.BookInShoppingCarts.Remove(product);
 
                 _shoppingCartRepository.Update(userShoppingCart);
                 return true;
@@ -73,7 +73,7 @@ namespace EShop.Service.Implementation
             var loggedInUser = _userRepository.Get(userId);
 
             var userShoppingCart = loggedInUser?.ShoppingCart;
-            var allProduct = userShoppingCart?.ProductInShoppingCarts?.ToList();
+            var allProduct = userShoppingCart?.BookInShoppingCarts?.ToList();
 
             var totalPrice = allProduct.Select(x => (x.Product.Price * x.Quantity)).Sum();
 
@@ -105,10 +105,10 @@ namespace EShop.Service.Implementation
 
                 _orderRepository.Insert(order);
 
-                List<ProductInOrder> productInOrder = new List<ProductInOrder>();
+                List<BookInOrder> productInOrder = new List<BookInOrder>();
 
-                var lista = userShoppingCart.ProductInShoppingCarts.Select(
-                    x => new ProductInOrder
+                var lista = userShoppingCart.BookInShoppingCarts.Select(
+                    x => new BookInOrder
                     {
                         Id = Guid.NewGuid(),
                         ProductId = x.Product.Id,
@@ -130,7 +130,7 @@ namespace EShop.Service.Implementation
                 {
                     var currentItem = lista[i - 1];
                     totalPrice += currentItem.Quantity * currentItem.Product.Price;
-                    sb.AppendLine(i.ToString() + ". " + currentItem.Product.ProductName + " with quantity of: " + currentItem.Quantity + " and price of: $" + currentItem.Product.Price);
+                    sb.AppendLine(i.ToString() + ". " + currentItem.Product.BookName + " with quantity of: " + currentItem.Quantity + " and price of: $" + currentItem.Product.Price);
                 }
 
                 sb.AppendLine("Total price for your order: " + totalPrice.ToString());
@@ -143,7 +143,7 @@ namespace EShop.Service.Implementation
                     _productInOrderRepository.Insert(product);
                 }
 
-                loggedInUser.ShoppingCart.ProductInShoppingCarts.Clear();
+                loggedInUser.ShoppingCart.BookInShoppingCarts.Clear();
                 _userRepository.Update(loggedInUser);
                 this._emailService.SendEmailAsync(message);
 

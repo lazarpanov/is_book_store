@@ -1,4 +1,4 @@
-﻿@model EShop.Domain.Domain.Product
+﻿@model EShop.Domain.Domain.Book
 
 @{
     ViewData["Title"] = "Edit";
@@ -15,19 +15,19 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
-                <label asp-for="ProductName" class="control-label"></label>
-                <input asp-for="ProductName" class="form-control" />
-                <span asp-validation-for="ProductName" class="text-danger"></span>
+                <label asp-for="BookName" class="control-label"></label>
+                <input asp-for="BookName" class="form-control" />
+                <span asp-validation-for="BookName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ProductDescription" class="control-label"></label>
-                <input asp-for="ProductDescription" class="form-control" />
-                <span asp-validation-for="ProductDescription" class="text-danger"></span>
+                <label asp-for="BookDescription" class="control-label"></label>
+                <input asp-for="BookDescription" class="form-control" />
+                <span asp-validation-for="BookDescription" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ProductImage" class="control-label"></label>
-                <input asp-for="ProductImage" class="form-control" />
-                <span asp-validation-for="ProductImage" class="text-danger"></span>
+                <label asp-for="BookImage" class="control-label"></label>
+                <input asp-for="BookImage" class="form-control" />
+                <span asp-validation-for="BookImage" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Price" class="control-label"></label>

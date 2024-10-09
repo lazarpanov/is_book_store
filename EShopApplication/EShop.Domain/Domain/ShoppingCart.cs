@@ -11,7 +11,7 @@ namespace EShop.Domain.Domain
     {
         public string? OwnerId { get; set; }
         public EShopApplicationUser? Owner { get; set; }
-        public virtual ICollection<ProductInShoppingCart>? ProductInShoppingCarts { get; set; }
+        public virtual ICollection<BookInShoppingCart>? BookInShoppingCarts { get; set; }
 
     }
 }

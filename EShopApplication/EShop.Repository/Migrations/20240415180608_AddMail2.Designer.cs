@@ -54,13 +54,13 @@ namespace EShop.Repository.Migrations
                     b.Property<int>("Price")
                         .HasColumnType("int");
 
-                    b.Property<string>("ProductDescription")
+                    b.Property<string>("BookDescription")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ProductImage")
+                    b.Property<string>("BookImage")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ProductName")
+                    b.Property<string>("BookName")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Rating")
@@ -116,7 +116,7 @@ namespace EShop.Repository.Migrations
 
                     b.HasIndex("ShoppingCartId");
 
-                    b.ToTable("ProductInShoppingCarts");
+                    b.ToTable("BookInShoppingCarts");
                 });
 
             modelBuilder.Entity("EShop.Domain.Domain.ShoppingCart", b =>
@@ -383,13 +383,13 @@ namespace EShop.Repository.Migrations
             modelBuilder.Entity("EShop.Domain.Domain.ProductInOrder", b =>
                 {
                     b.HasOne("EShop.Domain.Domain.Order", "Order")
-                        .WithMany("ProductsInOrder")
+                        .WithMany("BooksInOrder")
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("EShop.Domain.Domain.Product", "Product")
-                        .WithMany("ProductsInOrder")
+                        .WithMany("BooksInOrder")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -402,13 +402,13 @@ namespace EShop.Repository.Migrations
             modelBuilder.Entity("EShop.Domain.Domain.ProductInShoppingCart", b =>
                 {
                     b.HasOne("EShop.Domain.Domain.Product", "Product")
-                        .WithMany("ProductInShoppingCarts")
+                        .WithMany("BookInShoppingCarts")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("EShop.Domain.Domain.ShoppingCart", "ShoppingCart")
-                        .WithMany("ProductInShoppingCarts")
+                        .WithMany("BookInShoppingCarts")
                         .HasForeignKey("ShoppingCartId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -480,19 +480,19 @@ namespace EShop.Repository.Migrations
 
             modelBuilder.Entity("EShop.Domain.Domain.Order", b =>
                 {
-                    b.Navigation("ProductsInOrder");
+                    b.Navigation("BooksInOrder");
                 });
 
             modelBuilder.Entity("EShop.Domain.Domain.Product", b =>
                 {
-                    b.Navigation("ProductInShoppingCarts");
+                    b.Navigation("BookInShoppingCarts");
 
-                    b.Navigation("ProductsInOrder");
+                    b.Navigation("BooksInOrder");
                 });
 
             modelBuilder.Entity("EShop.Domain.Domain.ShoppingCart", b =>
                 {
-                    b.Navigation("ProductInShoppingCarts");
+                    b.Navigation("BookInShoppingCarts");
                 });
 
             modelBuilder.Entity("EShop.Domain.Identity.EShopApplicationUser", b =>

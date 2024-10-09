@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lazar\\source\\repos\\IS1_2024\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj": {}
+    "C:\\Users\\LARA\\source\\repos\\is_book_store2\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lazar\\source\\repos\\IS1_2024\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj": {
+    "C:\\Users\\LARA\\source\\repos\\is_book_store2\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lazar\\source\\repos\\IS1_2024\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\LARA\\source\\repos\\is_book_store2\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj",
         "projectName": "EShop.Domain",
-        "projectPath": "C:\\Users\\lazar\\source\\repos\\IS1_2024\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj",
-        "packagesPath": "C:\\Users\\lazar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lazar\\Source\\Repos\\IS1_2024\\EShopApplication\\EShop.Domain\\obj\\",
+        "projectPath": "C:\\Users\\LARA\\source\\repos\\is_book_store2\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj",
+        "packagesPath": "C:\\Users\\LARA\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LARA\\source\\repos\\is_book_store2\\EShopApplication\\EShop.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lazar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LARA\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

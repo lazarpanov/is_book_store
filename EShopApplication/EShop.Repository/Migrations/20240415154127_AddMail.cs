@@ -73,9 +73,9 @@ namespace EShop.Repository.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    ProductName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ProductDescription = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ProductImage = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    BookName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    BookDescription = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    BookImage = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Price = table.Column<int>(type: "int", nullable: false),
                     Rating = table.Column<int>(type: "int", nullable: false)
                 },
@@ -252,7 +252,7 @@ namespace EShop.Repository.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "ProductInShoppingCarts",
+                name: "BookInShoppingCarts",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -333,12 +333,12 @@ namespace EShop.Repository.Migrations
 
             migrationBuilder.CreateIndex(
                 name: "IX_ProductInShoppingCarts_ProductId",
-                table: "ProductInShoppingCarts",
+                table: "BookInShoppingCarts",
                 column: "ProductId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_ProductInShoppingCarts_ShoppingCartId",
-                table: "ProductInShoppingCarts",
+                table: "BookInShoppingCarts",
                 column: "ShoppingCartId");
 
             migrationBuilder.CreateIndex(
@@ -374,7 +374,7 @@ namespace EShop.Repository.Migrations
                 name: "ProductInOrders");
 
             migrationBuilder.DropTable(
-                name: "ProductInShoppingCarts");
+                name: "BookInShoppingCarts");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

@@ -9,10 +9,10 @@ namespace EShop.Service.Interface
 {
     public interface IProductService
     {
-        List<Product> GetAllProducts();
-        Product GetDetailsForProduct(Guid? id);
-        void CreateNewProduct(Product p);
-        void UpdateExistingProduct(Product p);
+        List<Book> GetAllProducts();
+        Book GetDetailsForProduct(Guid? id);
+        void CreateNewProduct(Book p);
+        void UpdateExistingProduct(Book p);
         void DeleteProduct(Guid id);
     }
 }

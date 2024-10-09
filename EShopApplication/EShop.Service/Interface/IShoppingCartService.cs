@@ -13,6 +13,6 @@ namespace EShop.Service.Interface
         ShoppingCartDto getShoppingCartInfo(string userId);
         bool deleteProductFromShoppingCart(string userId, Guid productId);
         bool order(string userId);
-        bool AddToShoppingConfirmed(ProductInShoppingCart model, string userId);
+        bool AddToShoppingConfirmed(BookInShoppingCart model, string userId);
     }
 }

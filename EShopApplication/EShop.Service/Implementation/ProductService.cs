@@ -11,18 +11,18 @@ namespace EShop.Service.Implementation
 {
     public class ProductService : IProductService
     {
-        private readonly IRepository<Product> _productRepository;
-        private readonly IRepository<ProductInShoppingCart> _productInShoppingCartRepository;
+        private readonly IRepository<Book> _productRepository;
+        private readonly IRepository<BookInShoppingCart> _productInShoppingCartRepository;
         private readonly IUserRepository _userRepository;
 
-        public ProductService (IRepository<Product> productRepository, IRepository<ProductInShoppingCart> productInShoppingCartRepository, IUserRepository userRepository)
+        public ProductService (IRepository<Book> productRepository, IRepository<BookInShoppingCart> productInShoppingCartRepository, IUserRepository userRepository)
         {
             _productRepository = productRepository;
             _productInShoppingCartRepository = productInShoppingCartRepository;
             _userRepository = userRepository;
         }
 
-        public void CreateNewProduct(Product p)
+        public void CreateNewProduct(Book p)
         {
             _productRepository.Insert(p);
         }
@@ -33,18 +33,18 @@ namespace EShop.Service.Implementation
             _productRepository.Delete(product);
         }
 
-        public List<Product> GetAllProducts()
+        public List<Book> GetAllProducts()
         {
             return _productRepository.GetAll().ToList();
         }
 
-        public Product GetDetailsForProduct(Guid? id)
+        public Book GetDetailsForProduct(Guid? id)
         {
             var product = _productRepository.Get(id);
             return product;
         }
 
-        public void UpdateExistingProduct(Product p)
+        public void UpdateExistingProduct(Book p)
         {
             _productRepository.Update(p);
         }

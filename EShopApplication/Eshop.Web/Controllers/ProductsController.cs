@@ -9,17 +9,20 @@ using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using EShop.Service.Interface;
 using EShop.Domain.Domain;
+using EShop.Service.Implementation;
 
 namespace Eshop.Web.Controllers
 {
     public class ProductsController : Controller
     {
         private readonly IProductService _productService;
+        private readonly IAuthorService _authorService;
         private readonly IShoppingCartService _shoppingCartService;
 
-        public ProductsController(IProductService productService, IShoppingCartService shoppingCartService)
+        public ProductsController(IProductService productService, IAuthorService authorService, IShoppingCartService shoppingCartService)
         {
             _productService = productService;
+            _authorService= authorService;
             _shoppingCartService = shoppingCartService;
         }
 
@@ -49,6 +52,7 @@ namespace Eshop.Web.Controllers
         // GET: Products/Create
         public IActionResult Create()
         {
+            ViewBag.AuthorId = new SelectList(_authorService.GetAllProducts(), "Id", "AuthorFullName");
             return View();
         }
 
@@ -57,7 +61,7 @@ namespace Eshop.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("Id,ProductName,ProductDescription,ProductImage,Price,Rating")] Product product)
+        public IActionResult Create([Bind("Id,BookName,AuthorId,BookDescription,BookImage,Price,Rating")] Book product)
         {
             if (ModelState.IsValid)
             {
@@ -77,7 +81,7 @@ namespace Eshop.Web.Controllers
 
             var product = _productService.GetDetailsForProduct(id);
 
-            ProductInShoppingCart ps = new ProductInShoppingCart();
+            BookInShoppingCart ps = new BookInShoppingCart();
 
             if (product != null)
             {
@@ -88,7 +92,7 @@ namespace Eshop.Web.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddToCartConfirmed(ProductInShoppingCart model)
+        public IActionResult AddToCartConfirmed(BookInShoppingCart model)
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             _shoppingCartService.AddToShoppingConfirmed(model, userId);
@@ -120,7 +124,7 @@ namespace Eshop.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(Guid id, [Bind("Id,ProductName,ProductDescription,ProductImage,Price,Rating")] Product product)
+        public IActionResult Edit(Guid id, [Bind("Id,BookName,BookDescription,BookImage,Price,Rating")] Book product)
         {
             if (id != product.Id)
             {

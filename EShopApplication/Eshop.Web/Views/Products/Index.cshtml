@@ -1,4 +1,4 @@
-﻿@model List<EShop.Domain.Domain.Product>
+﻿@model List<EShop.Domain.Domain.Book>
 
 @{
     ViewData["Title"] = "Index";
@@ -23,10 +23,10 @@
         <div class="col-3 m-4">
 
             <div class="card" style="width: 18rem; height: 35rem">
-                <img class="card-img-top" src="@item.ProductImage" alt="Card image cap">
+                <img class="card-img-top" src="@item.BookImage" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">@item.ProductName</h5>
-                    <p class="card-text">@item.ProductDescription</p>
+                    <h5 class="card-title">@item.BookName</h5>
+                    <p class="card-text">@item.BookDescription</p>
                     <h6>Price: @item.Price</h6>
                 </div>
                 <div class="card-footer">

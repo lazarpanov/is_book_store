@@ -23,18 +23,18 @@ namespace EShop.Repository.Implementation
         public List<Order> GetAllOrders()
         {
             return entities
-                .Include(z => z.ProductsInOrder)
+                .Include(z => z.BooksInOrder)
                 .Include(z => z.Owner)
-                .Include("ProductsInOrder.Product")
+                .Include("BooksInOrder.Product")
                 .ToList();
         }
 
         public Order GetDetailsForOrder(BaseEntity id)
         {
             return entities
-                .Include(z => z.ProductsInOrder)
+                .Include(z => z.BooksInOrder)
                 .Include(z => z.Owner)
-                .Include("ProductsInOrder.Product")
+                .Include("BooksInOrder.Product")
                 .SingleOrDefaultAsync(z => z.Id == id.Id).Result;
         }
     }
