@@ -18,17 +18,20 @@ namespace Eshop.Web.Controllers
         private readonly IProductService _productService;
         private readonly IAuthorService _authorService;
         private readonly IShoppingCartService _shoppingCartService;
+        private readonly IPublisherService _publisherService;
 
-        public ProductsController(IProductService productService, IAuthorService authorService, IShoppingCartService shoppingCartService)
+        public ProductsController(IProductService productService, IPublisherService publisherService, IAuthorService authorService, IShoppingCartService shoppingCartService)
         {
             _productService = productService;
             _authorService= authorService;
             _shoppingCartService = shoppingCartService;
+            _publisherService = publisherService;
         }
 
         // GET: Products
         public IActionResult Index()
         {
+
             return View(_productService.GetAllProducts());
         }
 
@@ -53,6 +56,7 @@ namespace Eshop.Web.Controllers
         public IActionResult Create()
         {
             ViewBag.AuthorId = new SelectList(_authorService.GetAllProducts(), "Id", "AuthorFullName");
+            ViewBag.PublisherId = new SelectList(_publisherService.GetAllProducts(), "Id", "PublisherName");
             return View();
         }
 
@@ -61,11 +65,13 @@ namespace Eshop.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("Id,BookName,AuthorId,BookDescription,BookImage,Price,Rating")] Book product)
+        public IActionResult Create([Bind("Id,BookName,author,publisher,AuthorId,PublisherId,BookDescription,BookImage,Price,Rating")] Book product)
         {
             if (ModelState.IsValid)
             {
                 product.Id = Guid.NewGuid();
+                product.author= _authorService.GetAllProducts().FirstOrDefault(x => x.Id == product.AuthorId).AuthorFullName;
+                product.publisher=_publisherService.GetAllProducts().FirstOrDefault(x =>x.Id==product.PublisherId).PublisherName;
                 _productService.CreateNewProduct(product);
                 return RedirectToAction(nameof(Index));
             }

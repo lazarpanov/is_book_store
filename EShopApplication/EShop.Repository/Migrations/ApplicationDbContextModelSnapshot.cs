@@ -17,7 +17,7 @@ namespace EShop.Repository.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.8")
+                .HasAnnotation("ProductVersion", "8.0.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -58,12 +58,20 @@ namespace EShop.Repository.Migrations
                     b.Property<int>("Price")
                         .HasColumnType("int");
 
+                    b.Property<Guid?>("PublisherId")
+                        .IsRequired()
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<int>("Rating")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
+                    b.Property<string>("author")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.HasIndex("AuthorId");
+                    b.Property<string>("publisher")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
 
                     b.ToTable("Products");
                 });
@@ -134,6 +142,20 @@ namespace EShop.Repository.Migrations
                     b.HasIndex("OwnerId");
 
                     b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("EShop.Domain.Domain.Publisher", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("PublisherName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Publishers");
                 });
 
             modelBuilder.Entity("EShop.Domain.Domain.ShoppingCart", b =>
@@ -386,17 +408,6 @@ namespace EShop.Repository.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
-                });
-
-            modelBuilder.Entity("EShop.Domain.Domain.Book", b =>
-                {
-                    b.HasOne("EShop.Domain.Domain.Author", "author")
-                        .WithMany()
-                        .HasForeignKey("AuthorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("author");
                 });
 
             modelBuilder.Entity("EShop.Domain.Domain.BookInOrder", b =>
