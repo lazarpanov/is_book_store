@@ -75,3 +75,16 @@ C:\Users\lazar\source\repos\is_book_store\EShopApplication\EShop.Domain\obj\Debu
 C:\Users\lazar\source\repos\is_book_store\EShopApplication\EShop.Domain\obj\Debug\net8.0\refint\EShop.Domain.dll
 C:\Users\lazar\source\repos\is_book_store\EShopApplication\EShop.Domain\obj\Debug\net8.0\EShop.Domain.pdb
 C:\Users\lazar\source\repos\is_book_store\EShopApplication\EShop.Domain\obj\Debug\net8.0\ref\EShop.Domain.dll
+C:\Users\LARA\Source\Repos\is_book_store\EShopApplication\EShop.Domain\bin\Debug\net8.0\EShop.Domain.deps.json
+C:\Users\LARA\Source\Repos\is_book_store\EShopApplication\EShop.Domain\bin\Debug\net8.0\EShop.Domain.dll
+C:\Users\LARA\Source\Repos\is_book_store\EShopApplication\EShop.Domain\bin\Debug\net8.0\EShop.Domain.pdb
+C:\Users\LARA\Source\Repos\is_book_store\EShopApplication\EShop.Domain\obj\Debug\net8.0\EShop.Domain.csproj.AssemblyReference.cache
+C:\Users\LARA\Source\Repos\is_book_store\EShopApplication\EShop.Domain\obj\Debug\net8.0\EShop.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LARA\Source\Repos\is_book_store\EShopApplication\EShop.Domain\obj\Debug\net8.0\EShop.Domain.AssemblyInfoInputs.cache
+C:\Users\LARA\Source\Repos\is_book_store\EShopApplication\EShop.Domain\obj\Debug\net8.0\EShop.Domain.AssemblyInfo.cs
+C:\Users\LARA\Source\Repos\is_book_store\EShopApplication\EShop.Domain\obj\Debug\net8.0\EShop.Domain.csproj.CoreCompileInputs.cache
+C:\Users\LARA\Source\Repos\is_book_store\EShopApplication\EShop.Domain\obj\Debug\net8.0\EShop.Domain.sourcelink.json
+C:\Users\LARA\Source\Repos\is_book_store\EShopApplication\EShop.Domain\obj\Debug\net8.0\EShop.Domain.dll
+C:\Users\LARA\Source\Repos\is_book_store\EShopApplication\EShop.Domain\obj\Debug\net8.0\refint\EShop.Domain.dll
+C:\Users\LARA\Source\Repos\is_book_store\EShopApplication\EShop.Domain\obj\Debug\net8.0\EShop.Domain.pdb
+C:\Users\LARA\Source\Repos\is_book_store\EShopApplication\EShop.Domain\obj\Debug\net8.0\ref\EShop.Domain.dll

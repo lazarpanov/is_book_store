@@ -8844,19 +8844,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lazar\\.nuget\\packages\\": {}
+    "C:\\Users\\LARA\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\Eshop.Web\\Eshop.Web.csproj",
+      "projectUniqueName": "C:\\Users\\LARA\\Source\\Repos\\is_book_store\\EShopApplication\\Eshop.Web\\Eshop.Web.csproj",
       "projectName": "Eshop.Web",
-      "projectPath": "C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\Eshop.Web\\Eshop.Web.csproj",
-      "packagesPath": "C:\\Users\\lazar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\Eshop.Web\\obj\\",
+      "projectPath": "C:\\Users\\LARA\\Source\\Repos\\is_book_store\\EShopApplication\\Eshop.Web\\Eshop.Web.csproj",
+      "packagesPath": "C:\\Users\\LARA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\LARA\\Source\\Repos\\is_book_store\\EShopApplication\\Eshop.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\lazar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LARA\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8870,14 +8870,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj": {
-              "projectPath": "C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj"
+            "C:\\Users\\LARA\\Source\\Repos\\is_book_store\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj": {
+              "projectPath": "C:\\Users\\LARA\\Source\\Repos\\is_book_store\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj"
             },
-            "C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\EShop.Repository\\EShop.Repository.csproj": {
-              "projectPath": "C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\EShop.Repository\\EShop.Repository.csproj"
+            "C:\\Users\\LARA\\Source\\Repos\\is_book_store\\EShopApplication\\EShop.Repository\\EShop.Repository.csproj": {
+              "projectPath": "C:\\Users\\LARA\\Source\\Repos\\is_book_store\\EShopApplication\\EShop.Repository\\EShop.Repository.csproj"
             },
-            "C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\EShop.Service\\EShop.Service.csproj": {
-              "projectPath": "C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\EShop.Service\\EShop.Service.csproj"
+            "C:\\Users\\LARA\\Source\\Repos\\is_book_store\\EShopApplication\\EShop.Service\\EShop.Service.csproj": {
+              "projectPath": "C:\\Users\\LARA\\Source\\Repos\\is_book_store\\EShopApplication\\EShop.Service\\EShop.Service.csproj"
             }
           }
         }

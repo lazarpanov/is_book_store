@@ -1,4 +1,4 @@
-﻿@model IEnumerable<EShop.Domain.Domain.PartnerBook>
+﻿@model List<EShop.Domain.Domain.PartnerBook>
 
 @{
     ViewData["Title"] = "Index";
@@ -7,9 +7,46 @@
 
 <h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<div class="container">
+    <div class="m-3">
+        <a asp-action="Create">Create New</a>
+
+    </div>
+
+    @for(int i=0;i<Model.Count; i++)
+    {
+        var item = Model[i];
+        if(i % 3 == 0)
+        {
+            @:<div class="row">
+        }
+        <div class="col-3 m-4">
+
+            <div class="card" style="width: 18rem; height: 45rem">
+                <img class="card-img-top" src="@item.imageURL" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">@item.title - @item.author</h5>
+                    <p class="card-text">@item.description</p>
+                    <p class="card-text">Page count: @item.totalPages</p>
+                    <p class="card-text">Publisher: @item.publisher</p>
+                    <p class="card-text">Isbn: @item.isbn</p>
+                    <h6>Price: @item.price</h6>
+                </div>
+@*                 <div class="card-footer">
+                    <a asp-controller="Products" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-info">Edit</a>
+                    <a asp-controller="Products" asp-action="AddToCart" asp-route-id="@item.Id" class="btn btn-info">Add to Cart</a>
+                    <a asp-controller="Products" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                </div> *@
+
+            </div>
+        </div>
+
+        if(i % 3 == 2)
+        {
+            @:</div>
+        }
+    }
+@*
 <table class="table">
     <thead>
         <tr>
@@ -82,3 +119,4 @@
 }
     </tbody>
 </table>
+ *@

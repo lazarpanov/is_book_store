@@ -1,20 +1,20 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\",
+  "WorkspaceRootPath": "C:\\Users\\LARA\\source\\repos\\is_book_store\\EShopApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\EShop.Repository\\Migrations\\20250109143804_neso2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EShop.Repository\\Migrations\\20250109143804_neso2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C3E5645-B4F3-48ED-B515-C91E001528AB}|EShop.Repository\\EShop.Repository.csproj|c:\\users\\lara\\source\\repos\\is_book_store\\eshopapplication\\eshop.repository\\migrations\\20250109143804_neso2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3E5645-B4F3-48ED-B515-C91E001528AB}|EShop.Repository\\EShop.Repository.csproj|solutionrelative:eshop.repository\\migrations\\20250109143804_neso2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ProektDb/True/SqlTable/dbo.PartnerBooks.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A390AA24-DFF6-45D1-A928-420DBD85D3AB}|EShop.Domain\\EShop.Domain.csproj|c:\\users\\lazar\\source\\repos\\is_book_store\\eshopapplication\\eshop.domain\\domain\\partnerbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A390AA24-DFF6-45D1-A928-420DBD85D3AB}|EShop.Domain\\EShop.Domain.csproj|c:\\users\\lara\\source\\repos\\is_book_store\\eshopapplication\\eshop.domain\\domain\\partnerbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A390AA24-DFF6-45D1-A928-420DBD85D3AB}|EShop.Domain\\EShop.Domain.csproj|solutionrelative:eshop.domain\\domain\\partnerbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CDD6E860-629E-41A0-A1E4-D9A81AD9B622}|Eshop.Web\\Eshop.Web.csproj|c:\\users\\lazar\\source\\repos\\is_book_store\\eshopapplication\\eshop.web\\controllers\\partnerbookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CDD6E860-629E-41A0-A1E4-D9A81AD9B622}|Eshop.Web\\Eshop.Web.csproj|c:\\users\\lara\\source\\repos\\is_book_store\\eshopapplication\\eshop.web\\controllers\\partnerbookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CDD6E860-629E-41A0-A1E4-D9A81AD9B622}|Eshop.Web\\Eshop.Web.csproj|solutionrelative:eshop.web\\controllers\\partnerbookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -25,7 +25,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -37,6 +37,14 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
             },
             {
@@ -44,21 +52,41 @@
               "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "20250109143804_neso2.cs",
-              "DocumentMoniker": "C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\EShop.Repository\\Migrations\\20250109143804_neso2.cs",
+              "DocumentMoniker": "C:\\Users\\LARA\\source\\repos\\is_book_store\\EShopApplication\\EShop.Repository\\Migrations\\20250109143804_neso2.cs",
               "RelativeDocumentMoniker": "EShop.Repository\\Migrations\\20250109143804_neso2.cs",
-              "ToolTip": "C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\EShop.Repository\\Migrations\\20250109143804_neso2.cs",
+              "ToolTip": "C:\\Users\\LARA\\source\\repos\\is_book_store\\EShopApplication\\EShop.Repository\\Migrations\\20250109143804_neso2.cs",
               "RelativeToolTip": "EShop.Repository\\Migrations\\20250109143804_neso2.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T14:38:05.114Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PartnerBook.cs",
+              "DocumentMoniker": "C:\\Users\\LARA\\source\\repos\\is_book_store\\EShopApplication\\EShop.Domain\\Domain\\PartnerBook.cs",
+              "RelativeDocumentMoniker": "EShop.Domain\\Domain\\PartnerBook.cs",
+              "ToolTip": "C:\\Users\\LARA\\source\\repos\\is_book_store\\EShopApplication\\EShop.Domain\\Domain\\PartnerBook.cs",
+              "RelativeToolTip": "EShop.Domain\\Domain\\PartnerBook.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAYwBgAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T14:35:19.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PartnerBooksController.cs",
+              "DocumentMoniker": "C:\\Users\\LARA\\source\\repos\\is_book_store\\EShopApplication\\Eshop.Web\\Controllers\\PartnerBooksController.cs",
+              "RelativeDocumentMoniker": "Eshop.Web\\Controllers\\PartnerBooksController.cs",
+              "ToolTip": "C:\\Users\\LARA\\source\\repos\\is_book_store\\EShopApplication\\Eshop.Web\\Controllers\\PartnerBooksController.cs",
+              "RelativeToolTip": "Eshop.Web\\Controllers\\PartnerBooksController.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAkwEEAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T14:33:56.697Z"
             },
             {
               "$type": "Document",
@@ -67,34 +95,7 @@
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ProektDb/True/SqlTable/dbo.PartnerBooks.sql",
               "ToolTip": "dbo.PartnerBooks [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-01-09T14:37:24.165Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PartnerBook.cs",
-              "DocumentMoniker": "C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\EShop.Domain\\Domain\\PartnerBook.cs",
-              "RelativeDocumentMoniker": "EShop.Domain\\Domain\\PartnerBook.cs",
-              "ToolTip": "C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\EShop.Domain\\Domain\\PartnerBook.cs",
-              "RelativeToolTip": "EShop.Domain\\Domain\\PartnerBook.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAYwBgAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T14:35:19.683Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PartnerBooksController.cs",
-              "DocumentMoniker": "C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\Eshop.Web\\Controllers\\PartnerBooksController.cs",
-              "RelativeDocumentMoniker": "Eshop.Web\\Controllers\\PartnerBooksController.cs",
-              "ToolTip": "C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\Eshop.Web\\Controllers\\PartnerBooksController.cs",
-              "RelativeToolTip": "Eshop.Web\\Controllers\\PartnerBooksController.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAkwEEAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T14:33:56.697Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T14:37:24.165Z"
             }
           ]
         }
