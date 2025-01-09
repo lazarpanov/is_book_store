@@ -17,7 +17,7 @@ namespace EShop.Repository.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.10")
+                .HasAnnotation("ProductVersion", "8.0.11")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -142,6 +142,48 @@ namespace EShop.Repository.Migrations
                     b.HasIndex("OwnerId");
 
                     b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("EShop.Domain.Domain.PartnerBook", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("author")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("imageURL")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("isbn")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double?>("price")
+                        .HasColumnType("float");
+
+                    b.Property<string>("publisher")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double?>("rating")
+                        .IsRequired()
+                        .HasColumnType("float");
+
+                    b.Property<string>("title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("totalPages")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PartnerBooks");
                 });
 
             modelBuilder.Entity("EShop.Domain.Domain.Publisher", b =>

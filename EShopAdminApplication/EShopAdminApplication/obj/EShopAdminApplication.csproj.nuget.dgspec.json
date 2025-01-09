@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopAdminApplication\\EShopAdminApplication\\EShopAdminApplication.csproj": {}
+    "C:\\Users\\lazar\\Source\\Repos\\is_book_store\\EShopAdminApplication\\EShopAdminApplication\\EShopAdminApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopAdminApplication\\EShopAdminApplication\\EShopAdminApplication.csproj": {
+    "C:\\Users\\lazar\\Source\\Repos\\is_book_store\\EShopAdminApplication\\EShopAdminApplication\\EShopAdminApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopAdminApplication\\EShopAdminApplication\\EShopAdminApplication.csproj",
+        "projectUniqueName": "C:\\Users\\lazar\\Source\\Repos\\is_book_store\\EShopAdminApplication\\EShopAdminApplication\\EShopAdminApplication.csproj",
         "projectName": "EShopAdminApplication",
-        "projectPath": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopAdminApplication\\EShopAdminApplication\\EShopAdminApplication.csproj",
-        "packagesPath": "C:\\Users\\zoric\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopAdminApplication\\EShopAdminApplication\\obj\\",
+        "projectPath": "C:\\Users\\lazar\\Source\\Repos\\is_book_store\\EShopAdminApplication\\EShopAdminApplication\\EShopAdminApplication.csproj",
+        "packagesPath": "C:\\Users\\lazar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lazar\\Source\\Repos\\is_book_store\\EShopAdminApplication\\EShopAdminApplication\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\zoric\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\lazar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

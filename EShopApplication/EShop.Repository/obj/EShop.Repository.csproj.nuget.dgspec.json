@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\source\\repos\\is_book_store\\EShopApplication\\EShop.Repository\\EShop.Repository.csproj": {}
+    "C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\EShop.Repository\\EShop.Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\source\\repos\\is_book_store\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj": {
+    "C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\is_book_store\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj",
         "projectName": "EShop.Domain",
-        "projectPath": "C:\\Users\\user\\source\\repos\\is_book_store\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\is_book_store\\EShopApplication\\EShop.Domain\\obj\\",
+        "projectPath": "C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj",
+        "packagesPath": "C:\\Users\\lazar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\EShop.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lazar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -66,21 +66,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\user\\source\\repos\\is_book_store\\EShopApplication\\EShop.Repository\\EShop.Repository.csproj": {
+    "C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\EShop.Repository\\EShop.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\is_book_store\\EShopApplication\\EShop.Repository\\EShop.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\EShop.Repository\\EShop.Repository.csproj",
         "projectName": "EShop.Repository",
-        "projectPath": "C:\\Users\\user\\source\\repos\\is_book_store\\EShopApplication\\EShop.Repository\\EShop.Repository.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\is_book_store\\EShopApplication\\EShop.Repository\\obj\\",
+        "projectPath": "C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\EShop.Repository\\EShop.Repository.csproj",
+        "packagesPath": "C:\\Users\\lazar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\EShop.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lazar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -94,8 +94,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\user\\source\\repos\\is_book_store\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj": {
-                "projectPath": "C:\\Users\\user\\source\\repos\\is_book_store\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj"
+              "C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj": {
+                "projectPath": "C:\\Users\\lazar\\source\\repos\\is_book_store\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj"
               }
             }
           }
@@ -140,7 +140,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
